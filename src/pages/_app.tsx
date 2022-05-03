@@ -2,9 +2,8 @@ import type { AppProps } from 'next/app';
 import { useRef } from 'react';
 import { Hydrate, QueryClient, QueryClientProvider } from 'react-query';
 import { ReactQueryDevtools } from 'react-query/devtools';
-
-import 'styles/globals.css';
-import 'styles/tailwind.css';
+import '~/styles/globals.css';
+import '~/styles/tailwind.css';
 
 const MyApp = ({ Component, pageProps }: AppProps) => {
     const queryClient = useRef(new QueryClient());
